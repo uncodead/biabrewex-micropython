@@ -1,0 +1,27 @@
+!Recipe
+  name: 'White IPA'
+  wort: !Wort
+    mashin: 70
+    steps:
+      - !Step
+          name: 'Sacarification'
+          duration: 60
+          temperature: 65
+          recirculate: True
+      - !Step
+          name: 'Mash out'
+          duration: 10
+          temperature: 79
+          recirculate: False
+  boil: !Boil
+    duration: 60
+    additions:
+      - !Addition
+          name: 'Columbus'
+          instant: 60
+      - !Addition
+          name: 'Cascade'
+          instant: 45
+      - !Addition
+          name: 'Wirfloc'
+          instant: 15
